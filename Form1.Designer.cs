@@ -36,8 +36,6 @@ namespace Contact_Tracing_App
             this.gender = new System.Windows.Forms.Label();
             this.date = new System.Windows.Forms.Label();
             this.contactnumber = new System.Windows.Forms.Label();
-            this.nametb = new System.Windows.Forms.TextBox();
-            this.datetb = new System.Windows.Forms.TextBox();
             this.agetb = new System.Windows.Forms.TextBox();
             this.gendertb = new System.Windows.Forms.TextBox();
             this.addresstb = new System.Windows.Forms.TextBox();
@@ -72,6 +70,8 @@ namespace Contact_Tracing_App
             this.temp = new System.Windows.Forms.Label();
             this.temptb = new System.Windows.Forms.TextBox();
             this.submit = new System.Windows.Forms.Button();
+            this.nametb = new System.Windows.Forms.TextBox();
+            this.datetb = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // name
@@ -133,22 +133,6 @@ namespace Contact_Tracing_App
             this.contactnumber.Size = new System.Drawing.Size(66, 16);
             this.contactnumber.TabIndex = 5;
             this.contactnumber.Text = "Contact #:";
-            // 
-            // nametb
-            // 
-            this.nametb.Location = new System.Drawing.Point(163, 179);
-            this.nametb.Name = "nametb";
-            this.nametb.Size = new System.Drawing.Size(267, 20);
-            this.nametb.TabIndex = 6;
-            this.nametb.TextChanged += new System.EventHandler(this.nametb_TextChanged);
-            // 
-            // datetb
-            // 
-            this.datetb.Location = new System.Drawing.Point(511, 179);
-            this.datetb.Name = "datetb";
-            this.datetb.Size = new System.Drawing.Size(100, 20);
-            this.datetb.TabIndex = 7;
-            this.datetb.TextChanged += new System.EventHandler(this.datetb_TextChanged);
             // 
             // agetb
             // 
@@ -447,6 +431,21 @@ namespace Contact_Tracing_App
             this.submit.TabIndex = 41;
             this.submit.Text = "SUBMIT";
             this.submit.UseVisualStyleBackColor = true;
+            this.submit.Click += new System.EventHandler(this.submit_Click);
+            // 
+            // nametb
+            // 
+            this.nametb.Location = new System.Drawing.Point(158, 183);
+            this.nametb.Name = "nametb";
+            this.nametb.Size = new System.Drawing.Size(295, 20);
+            this.nametb.TabIndex = 42;
+            // 
+            // datetb
+            // 
+            this.datetb.Location = new System.Drawing.Point(512, 183);
+            this.datetb.Name = "datetb";
+            this.datetb.Size = new System.Drawing.Size(100, 20);
+            this.datetb.TabIndex = 43;
             // 
             // contacttracing
             // 
@@ -455,6 +454,8 @@ namespace Contact_Tracing_App
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(650, 749);
+            this.Controls.Add(this.datetb);
+            this.Controls.Add(this.nametb);
             this.Controls.Add(this.submit);
             this.Controls.Add(this.temptb);
             this.Controls.Add(this.temp);
@@ -489,8 +490,6 @@ namespace Contact_Tracing_App
             this.Controls.Add(this.addresstb);
             this.Controls.Add(this.gendertb);
             this.Controls.Add(this.agetb);
-            this.Controls.Add(this.datetb);
-            this.Controls.Add(this.nametb);
             this.Controls.Add(this.contactnumber);
             this.Controls.Add(this.date);
             this.Controls.Add(this.gender);
@@ -513,8 +512,6 @@ namespace Contact_Tracing_App
         private System.Windows.Forms.Label gender;
         private System.Windows.Forms.Label date;
         private System.Windows.Forms.Label contactnumber;
-        private System.Windows.Forms.TextBox nametb;
-        private System.Windows.Forms.TextBox datetb;
         private System.Windows.Forms.TextBox agetb;
         private System.Windows.Forms.TextBox gendertb;
         private System.Windows.Forms.TextBox addresstb;
@@ -549,6 +546,8 @@ namespace Contact_Tracing_App
         private System.Windows.Forms.Label temp;
         private System.Windows.Forms.TextBox temptb;
         private System.Windows.Forms.Button submit;
+        private System.Windows.Forms.TextBox nametb;
+        private System.Windows.Forms.TextBox datetb;
     }
 }
 
