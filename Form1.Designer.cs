@@ -71,6 +71,7 @@ namespace Contact_Tracing_App
             this.vaccinetype2bt = new System.Windows.Forms.TextBox();
             this.temp = new System.Windows.Forms.Label();
             this.temptb = new System.Windows.Forms.TextBox();
+            this.submit = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // name
@@ -129,9 +130,9 @@ namespace Contact_Tracing_App
             this.contactnumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.contactnumber.Location = new System.Drawing.Point(266, 219);
             this.contactnumber.Name = "contactnumber";
-            this.contactnumber.Size = new System.Drawing.Size(107, 16);
+            this.contactnumber.Size = new System.Drawing.Size(66, 16);
             this.contactnumber.TabIndex = 5;
-            this.contactnumber.Text = "Contact Number:";
+            this.contactnumber.Text = "Contact #:";
             // 
             // nametb
             // 
@@ -139,6 +140,7 @@ namespace Contact_Tracing_App
             this.nametb.Name = "nametb";
             this.nametb.Size = new System.Drawing.Size(267, 20);
             this.nametb.TabIndex = 6;
+            this.nametb.TextChanged += new System.EventHandler(this.nametb_TextChanged);
             // 
             // datetb
             // 
@@ -146,6 +148,7 @@ namespace Contact_Tracing_App
             this.datetb.Name = "datetb";
             this.datetb.Size = new System.Drawing.Size(100, 20);
             this.datetb.TabIndex = 7;
+            this.datetb.TextChanged += new System.EventHandler(this.datetb_TextChanged);
             // 
             // agetb
             // 
@@ -163,14 +166,14 @@ namespace Contact_Tracing_App
             // 
             // addresstb
             // 
-            this.addresstb.Location = new System.Drawing.Point(130, 249);
+            this.addresstb.Location = new System.Drawing.Point(110, 249);
             this.addresstb.Name = "addresstb";
-            this.addresstb.Size = new System.Drawing.Size(481, 20);
+            this.addresstb.Size = new System.Drawing.Size(501, 20);
             this.addresstb.TabIndex = 10;
             // 
             // contacttb
             // 
-            this.contacttb.Location = new System.Drawing.Point(377, 218);
+            this.contacttb.Location = new System.Drawing.Point(338, 214);
             this.contacttb.Name = "contacttb";
             this.contacttb.Size = new System.Drawing.Size(115, 20);
             this.contacttb.TabIndex = 11;
@@ -423,18 +426,27 @@ namespace Contact_Tracing_App
             // 
             this.temp.AutoSize = true;
             this.temp.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.temp.Location = new System.Drawing.Point(498, 219);
+            this.temp.Location = new System.Drawing.Point(467, 220);
             this.temp.Name = "temp";
-            this.temp.Size = new System.Drawing.Size(86, 16);
+            this.temp.Size = new System.Drawing.Size(89, 16);
             this.temp.TabIndex = 39;
-            this.temp.Text = "Temperature";
+            this.temp.Text = "Temperature:";
             // 
             // temptb
             // 
-            this.temptb.Location = new System.Drawing.Point(591, 219);
+            this.temptb.Location = new System.Drawing.Point(564, 218);
             this.temptb.Name = "temptb";
             this.temptb.Size = new System.Drawing.Size(47, 20);
             this.temptb.TabIndex = 40;
+            // 
+            // submit
+            // 
+            this.submit.Location = new System.Drawing.Point(320, 683);
+            this.submit.Name = "submit";
+            this.submit.Size = new System.Drawing.Size(92, 33);
+            this.submit.TabIndex = 41;
+            this.submit.Text = "SUBMIT";
+            this.submit.UseVisualStyleBackColor = true;
             // 
             // contacttracing
             // 
@@ -443,6 +455,7 @@ namespace Contact_Tracing_App
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(650, 749);
+            this.Controls.Add(this.submit);
             this.Controls.Add(this.temptb);
             this.Controls.Add(this.temp);
             this.Controls.Add(this.vaccinetype2bt);
@@ -535,6 +548,7 @@ namespace Contact_Tracing_App
         private System.Windows.Forms.TextBox vaccinetype2bt;
         private System.Windows.Forms.Label temp;
         private System.Windows.Forms.TextBox temptb;
+        private System.Windows.Forms.Button submit;
     }
 }
 
