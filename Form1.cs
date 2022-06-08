@@ -22,7 +22,11 @@ namespace Contact_Tracing_App
          
         private void nametb_TextChanged(object sender, EventArgs e)
         {
-             
+           // StreamWriter
+           
+            StreamWriter file = new StreamWriter(@"C:\Users\universal\Documents\contacttracing.txt");
+            file.WriteLine("Complete Name: " + nametb.Text);
+            file.Close();
         }
 
         private void datetb_TextChanged(object sender, EventArgs e)
