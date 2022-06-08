@@ -37,9 +37,32 @@ namespace Contact_Tracing_App
             file.WriteLine("first dose vaccine type: " + vaccinetype1tb.Text );
             file.WriteLine("Completed the second dose of the Vaccine: " + seconddosetb.Text);
             file.WriteLine("second dose vaccine type: " + vaccinetype2bt.Text );
+            file.WriteLine("   ");
             file.Close();
-            
+            ButtonClicked();
         }
        
+        private void ButtonClicked()
+        {
+            Boolean submit_clicked = true;
+
+            if (submit_clicked)
+                MessageBox.Show("Thank you for filling this contact tracing form");
+            nametb.Text = "";
+            datetb.Text = "";
+            agetb.Text = "";
+            gendertb.Text = "";
+            contacttb.Text = "";
+            temptb.Text  = "";
+            addresstb.Text = "";
+            q1tb.Text = "";
+            ddmmyytb.Text = "";
+            q4tb.Text = "";
+            q5tb.Text = "";
+            firstdosetb.Text = "";
+            vaccinetype1tb.Text = "";
+            seconddosetb.Text = "";
+            vaccinetype2bt.Text = "";
+        }
     }
 }
