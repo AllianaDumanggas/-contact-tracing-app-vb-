@@ -72,6 +72,8 @@ namespace Contact_Tracing_App
             this.datetb = new System.Windows.Forms.TextBox();
             this.input1 = new System.Windows.Forms.Label();
             this.q1tb = new System.Windows.Forms.TextBox();
+            this.answer_again = new System.Windows.Forms.Button();
+            this.close = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // name
@@ -408,12 +410,13 @@ namespace Contact_Tracing_App
             // 
             // submit
             // 
-            this.submit.Location = new System.Drawing.Point(240, 614);
+            this.submit.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.submit.Location = new System.Drawing.Point(232, 612);
             this.submit.Name = "submit";
-            this.submit.Size = new System.Drawing.Size(92, 33);
+            this.submit.Size = new System.Drawing.Size(85, 23);
             this.submit.TabIndex = 41;
             this.submit.Text = "SUBMIT";
-            this.submit.UseVisualStyleBackColor = true;
+            this.submit.UseVisualStyleBackColor = false;
             this.submit.Click += new System.EventHandler(this.submit_Click);
             // 
             // nametb
@@ -447,6 +450,28 @@ namespace Contact_Tracing_App
             this.q1tb.Size = new System.Drawing.Size(123, 20);
             this.q1tb.TabIndex = 13;
             // 
+            // answer_again
+            // 
+            this.answer_again.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.answer_again.Location = new System.Drawing.Point(368, 612);
+            this.answer_again.Name = "answer_again";
+            this.answer_again.Size = new System.Drawing.Size(85, 25);
+            this.answer_again.TabIndex = 44;
+            this.answer_again.Text = "Answer Again";
+            this.answer_again.UseVisualStyleBackColor = false;
+            this.answer_again.Click += new System.EventHandler(this.answer_again_Click);
+            // 
+            // close
+            // 
+            this.close.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.close.Location = new System.Drawing.Point(299, 643);
+            this.close.Name = "close";
+            this.close.Size = new System.Drawing.Size(85, 24);
+            this.close.TabIndex = 45;
+            this.close.Text = "EXIT";
+            this.close.UseVisualStyleBackColor = false;
+            this.close.Click += new System.EventHandler(this.close_Click);
+            // 
             // contacttracing
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -454,6 +479,8 @@ namespace Contact_Tracing_App
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(650, 749);
+            this.Controls.Add(this.close);
+            this.Controls.Add(this.answer_again);
             this.Controls.Add(this.datetb);
             this.Controls.Add(this.nametb);
             this.Controls.Add(this.submit);
@@ -497,6 +524,7 @@ namespace Contact_Tracing_App
             this.Controls.Add(this.address);
             this.Controls.Add(this.name);
             this.DoubleBuffered = true;
+            this.MaximizeBox = false;
             this.Name = "contacttracing";
             this.Text = "CONTACT TRACING";
             this.ResumeLayout(false);
@@ -548,6 +576,8 @@ namespace Contact_Tracing_App
         private System.Windows.Forms.TextBox datetb;
         private System.Windows.Forms.Label input1;
         private System.Windows.Forms.TextBox q1tb;
+        private System.Windows.Forms.Button answer_again;
+        private System.Windows.Forms.Button close;
     }
 }
 
