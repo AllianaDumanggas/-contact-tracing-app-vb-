@@ -51,14 +51,7 @@ namespace Contact_Tracing_App
             {
                 MessageBox.Show("Please fill out the form Completely");
             }
-            else if (q1tb.Text == "")
-            {
-                MessageBox.Show("Please fill out the form Completely");
-            }
-            else if (ddmmyytb.Text == "")
-            {
-                MessageBox.Show("Please fill out the form Completely");
-            }
+            
             else if (q4tb.Text == "")
             {
                 MessageBox.Show("Please fill out the form Completely");
