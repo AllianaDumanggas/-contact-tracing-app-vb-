@@ -18,10 +18,10 @@ namespace Contact_Tracing_App
         {
             InitializeComponent();
         }
-
+         
         private void submit_Click(object sender, EventArgs e)
         {
-            StreamWriter file = new StreamWriter(@"C:\Users\universal\Documents\contact-tracing.txt", true);
+            StreamWriter file = new StreamWriter(@"C:\Users\universal\Documents\contact-tracing.txt", true);     
             file.WriteLine("Complete Name: "+ nametb.Text);
             file.WriteLine("Date: "+ datetb.Text );
             file.WriteLine("Age: " + agetb.Text);
@@ -38,31 +38,100 @@ namespace Contact_Tracing_App
             file.WriteLine("Completed the second dose of the Vaccine: " + seconddosetb.Text);
             file.WriteLine("second dose vaccine type: " + vaccinetype2bt.Text );
             file.WriteLine("   ");
+            CheckAllBoxes();
             file.Close();
-            ButtonClicked();
+             
+             
+
+        } 
+
+        private void CheckAllBoxes()
+        {
+             
+            if (nametb.Text == "")
+            {
+                MessageBox.Show("Please fill out the form Completely");
+            }
+            else if (datetb.Text == "")
+            {
+                MessageBox.Show("Please fill out the form Completely");
+            }
+            else if (agetb.Text == "")
+            {
+                MessageBox.Show("Please fill out the form Completely");
+            }
+            else if (gendertb.Text == "")
+            {
+                MessageBox.Show("Please fill out the form Completely");
+            }
+            else if (contacttb.Text == "")
+            {
+                MessageBox.Show("Please fill out the form Completely");
+            }
+            else if (temptb.Text == "")
+            {
+                MessageBox.Show("Please fill out the form Completely");
+            }
+            else if (addresstb.Text == "")
+            {
+                MessageBox.Show("Please fill out the form Completely");
+            }
+            else if (q1tb.Text == "")
+            {
+                MessageBox.Show("Please fill out the form Completely");
+            }
+            else if (ddmmyytb.Text == "")
+            {
+                MessageBox.Show("Please fill out the form Completely");
+            }
+            else if (q4tb.Text == "")
+            {
+                MessageBox.Show("Please fill out the form Completely");
+            }
+            else if (q5tb.Text == "")
+            {
+                MessageBox.Show("Please fill out the form Completely");
+            }
+            else if (firstdosetb.Text == "")
+            {
+                MessageBox.Show("Please fill out the form Completely");
+            }
+            else if (vaccinetype1tb.Text == "")
+            {
+                MessageBox.Show("Please fill out the form Completely");
+            }
+            else if (seconddosetb.Text == "")
+            {
+                MessageBox.Show("Please fill out the form Completely");
+            }
+            else if (vaccinetype2bt.Text == "")
+            {
+                MessageBox.Show("Please fill out the form Completely");
+            }
+
+            else
+            {
+                Boolean submit_clicked = true;
+                if (submit_clicked)
+                    nametb.Text = "";
+                datetb.Text = "";
+                agetb.Text = "";
+                gendertb.Text = "";
+                contacttb.Text = "";
+                temptb.Text = "";
+                addresstb.Text = "";
+                q1tb.Text = "";
+                ddmmyytb.Text = "";
+                q4tb.Text = "";
+                q5tb.Text = "";
+                firstdosetb.Text = "";
+                vaccinetype1tb.Text = "";
+                seconddosetb.Text = "";
+                vaccinetype2bt.Text = "";
+                MessageBox.Show("We are home to Care");
+                MessageBox.Show("Thank you for filling this contact tracing form");
+            } 
         }
        
-        private void ButtonClicked()
-        {
-            Boolean submit_clicked = true;
-
-            if (submit_clicked)
-                MessageBox.Show("Thank you for filling this contact tracing form");
-            nametb.Text = "";
-            datetb.Text = "";
-            agetb.Text = "";
-            gendertb.Text = "";
-            contacttb.Text = "";
-            temptb.Text  = "";
-            addresstb.Text = "";
-            q1tb.Text = "";
-            ddmmyytb.Text = "";
-            q4tb.Text = "";
-            q5tb.Text = "";
-            firstdosetb.Text = "";
-            vaccinetype1tb.Text = "";
-            seconddosetb.Text = "";
-            vaccinetype2bt.Text = "";
-        }
     }
 }

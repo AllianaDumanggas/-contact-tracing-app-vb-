@@ -41,7 +41,6 @@ namespace Contact_Tracing_App
             this.addresstb = new System.Windows.Forms.TextBox();
             this.contacttb = new System.Windows.Forms.TextBox();
             this.q1 = new System.Windows.Forms.Label();
-            this.q1tb = new System.Windows.Forms.TextBox();
             this.a1 = new System.Windows.Forms.Label();
             this.b1 = new System.Windows.Forms.Label();
             this.c1 = new System.Windows.Forms.Label();
@@ -49,7 +48,6 @@ namespace Contact_Tracing_App
             this.e1 = new System.Windows.Forms.Label();
             this.f1 = new System.Windows.Forms.Label();
             this.g1 = new System.Windows.Forms.Label();
-            this.input1 = new System.Windows.Forms.Label();
             this.q2 = new System.Windows.Forms.Label();
             this.ddmmyytb = new System.Windows.Forms.TextBox();
             this.ddmmyy = new System.Windows.Forms.Label();
@@ -72,6 +70,8 @@ namespace Contact_Tracing_App
             this.submit = new System.Windows.Forms.Button();
             this.nametb = new System.Windows.Forms.TextBox();
             this.datetb = new System.Windows.Forms.TextBox();
+            this.input1 = new System.Windows.Forms.Label();
+            this.q1tb = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // name
@@ -173,13 +173,6 @@ namespace Contact_Tracing_App
             this.q1.Text = "Are you currently experiencing/previously experienced any of the follywing sympto" +
     "ms?";
             // 
-            // q1tb
-            // 
-            this.q1tb.Location = new System.Drawing.Point(488, 300);
-            this.q1tb.Name = "q1tb";
-            this.q1tb.Size = new System.Drawing.Size(123, 20);
-            this.q1tb.TabIndex = 13;
-            // 
             // a1
             // 
             this.a1.AutoSize = true;
@@ -250,16 +243,6 @@ namespace Contact_Tracing_App
             this.g1.Size = new System.Drawing.Size(79, 15);
             this.g1.TabIndex = 20;
             this.g1.Text = "g. body pains";
-            // 
-            // input1
-            // 
-            this.input1.AutoSize = true;
-            this.input1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.input1.Location = new System.Drawing.Point(229, 304);
-            this.input1.Name = "input1";
-            this.input1.Size = new System.Drawing.Size(241, 16);
-            this.input1.TabIndex = 21;
-            this.input1.Text = "(Type all letters that apply e.g.  a , b, g ) ";
             // 
             // q2
             // 
@@ -425,7 +408,7 @@ namespace Contact_Tracing_App
             // 
             // submit
             // 
-            this.submit.Location = new System.Drawing.Point(320, 683);
+            this.submit.Location = new System.Drawing.Point(240, 614);
             this.submit.Name = "submit";
             this.submit.Size = new System.Drawing.Size(92, 33);
             this.submit.TabIndex = 41;
@@ -446,6 +429,23 @@ namespace Contact_Tracing_App
             this.datetb.Name = "datetb";
             this.datetb.Size = new System.Drawing.Size(100, 20);
             this.datetb.TabIndex = 43;
+            // 
+            // input1
+            // 
+            this.input1.AutoSize = true;
+            this.input1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.input1.Location = new System.Drawing.Point(229, 304);
+            this.input1.Name = "input1";
+            this.input1.Size = new System.Drawing.Size(241, 16);
+            this.input1.TabIndex = 21;
+            this.input1.Text = "(Type all letters that apply e.g.  a , b, g ) ";
+            // 
+            // q1tb
+            // 
+            this.q1tb.Location = new System.Drawing.Point(488, 300);
+            this.q1tb.Name = "q1tb";
+            this.q1tb.Size = new System.Drawing.Size(123, 20);
+            this.q1tb.TabIndex = 13;
             // 
             // contacttracing
             // 
@@ -517,7 +517,6 @@ namespace Contact_Tracing_App
         private System.Windows.Forms.TextBox addresstb;
         private System.Windows.Forms.TextBox contacttb;
         private System.Windows.Forms.Label q1;
-        private System.Windows.Forms.TextBox q1tb;
         private System.Windows.Forms.Label a1;
         private System.Windows.Forms.Label b1;
         private System.Windows.Forms.Label c1;
@@ -525,7 +524,6 @@ namespace Contact_Tracing_App
         private System.Windows.Forms.Label e1;
         private System.Windows.Forms.Label f1;
         private System.Windows.Forms.Label g1;
-        private System.Windows.Forms.Label input1;
         private System.Windows.Forms.Label q2;
         private System.Windows.Forms.TextBox ddmmyytb;
         private System.Windows.Forms.Label ddmmyy;
@@ -548,6 +546,8 @@ namespace Contact_Tracing_App
         private System.Windows.Forms.Button submit;
         private System.Windows.Forms.TextBox nametb;
         private System.Windows.Forms.TextBox datetb;
+        private System.Windows.Forms.Label input1;
+        private System.Windows.Forms.TextBox q1tb;
     }
 }
 
