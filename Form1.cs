@@ -134,12 +134,15 @@ namespace Contact_Tracing_App
             
         }
 
-        private void answer_again_Click(object sender, EventArgs e)
+         
+
+        private void answeragainmenu_Click(object sender, EventArgs e)
         {
             AnswerAgain();
+
         }
 
-        private void close_Click(object sender, EventArgs e)
+        private void exitmenu_Click(object sender, EventArgs e)
         {
             this.Close();
         }
