@@ -18,8 +18,8 @@ namespace Contact_Tracing_App
         {
             InitializeComponent();
         }
-         
-      
+
+
 
         private void CheckAllBoxes()
         {
@@ -51,7 +51,7 @@ namespace Contact_Tracing_App
             {
                 MessageBox.Show("Please fill out the form Completely");
             }
-            
+
             else if (q4tb.Text == "")
             {
                 MessageBox.Show("Please fill out the form Completely");
@@ -82,13 +82,13 @@ namespace Contact_Tracing_App
                 MessageBox.Show("We are home to Care");
                 MessageBox.Show("Thank you for filling this contact tracing form");
             }
-             
-              
-             
+
+
+
         }
         private void submit_Click(object sender, EventArgs e)
         {
-            
+
             StreamWriter file = new StreamWriter(@"C:\Users\universal\Documents\contact-tracing.txt", true);
             file.WriteLine("Complete Name: " + nametb.Text);
             file.WriteLine("Date: " + datetb.Text);
@@ -108,7 +108,7 @@ namespace Contact_Tracing_App
             file.WriteLine("   ");
             file.Close();
             CheckAllBoxes();
-            
+
 
         }
 
@@ -131,11 +131,8 @@ namespace Contact_Tracing_App
             vaccinetype1tb.Text = "";
             seconddosetb.Text = "";
             vaccinetype2bt.Text = "";
-            
+
         }
-
-         
-
         private void answeragainmenu_Click(object sender, EventArgs e)
         {
             AnswerAgain();
@@ -146,5 +143,19 @@ namespace Contact_Tracing_App
         {
             this.Close();
         }
+
+        private void viewmenu_Click(object sender, EventArgs e)
+        {
+            StreamReader reader = new StreamReader(@"C:\Users\universal\Documents\contact-tracing.txt");
+                String all = reader.ReadToEnd();
+                MessageBox.Show(all);
+            
+            // while (!reader.EndOfStream)
+            //{
+            // String line =reader.Readline();
+            // MessageBox.Show (line);
+            //}
+        }
     }
 }
+ 

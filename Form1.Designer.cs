@@ -495,6 +495,7 @@ namespace Contact_Tracing_App
             this.viewmenu.Name = "viewmenu";
             this.viewmenu.Size = new System.Drawing.Size(180, 22);
             this.viewmenu.Text = "VIEW RECORD";
+            this.viewmenu.Click += new System.EventHandler(this.viewmenu_Click);
             // 
             // exitmenu
             // 
