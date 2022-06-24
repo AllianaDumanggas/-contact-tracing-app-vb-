@@ -31,11 +31,11 @@ namespace Contact_Tracing_App
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RECORDS));
             this.viewallrecords = new System.Windows.Forms.Button();
-            this.findatxtbox = new System.Windows.Forms.TextBox();
             this.viewallname = new System.Windows.Forms.Button();
             this.datefind = new System.Windows.Forms.TextBox();
-            this.find = new System.Windows.Forms.Button();
             this.finddate = new System.Windows.Forms.Button();
+            this.findbttn = new System.Windows.Forms.Button();
+            this.findtxt = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // viewallrecords
@@ -47,14 +47,6 @@ namespace Contact_Tracing_App
             this.viewallrecords.Text = "VIEW ALL RECORDS";
             this.viewallrecords.UseVisualStyleBackColor = true;
             this.viewallrecords.Click += new System.EventHandler(this.viewallrecords_Click);
-            // 
-            // findatxtbox
-            // 
-            this.findatxtbox.Location = new System.Drawing.Point(262, 44);
-            this.findatxtbox.Name = "findatxtbox";
-            this.findatxtbox.Size = new System.Drawing.Size(187, 20);
-            this.findatxtbox.TabIndex = 2;
-            this.findatxtbox.Text = " ";
             // 
             // viewallname
             // 
@@ -68,21 +60,11 @@ namespace Contact_Tracing_App
             // 
             // datefind
             // 
-            this.datefind.Location = new System.Drawing.Point(316, 220);
+            this.datefind.Location = new System.Drawing.Point(316, 219);
             this.datefind.Name = "datefind";
             this.datefind.Size = new System.Drawing.Size(133, 20);
             this.datefind.TabIndex = 5;
             this.datefind.Text = "m/dd/yy";
-            // 
-            // find
-            // 
-            this.find.Location = new System.Drawing.Point(456, 40);
-            this.find.Name = "find";
-            this.find.Size = new System.Drawing.Size(75, 23);
-            this.find.TabIndex = 6;
-            this.find.Text = "FIND";
-            this.find.UseVisualStyleBackColor = true;
-            this.find.Click += new System.EventHandler(this.find_Click);
             // 
             // finddate
             // 
@@ -94,6 +76,24 @@ namespace Contact_Tracing_App
             this.finddate.UseVisualStyleBackColor = true;
             this.finddate.Click += new System.EventHandler(this.finddate_Click);
             // 
+            // findbttn
+            // 
+            this.findbttn.Location = new System.Drawing.Point(463, 40);
+            this.findbttn.Name = "findbttn";
+            this.findbttn.Size = new System.Drawing.Size(75, 23);
+            this.findbttn.TabIndex = 8;
+            this.findbttn.Text = "FIND";
+            this.findbttn.UseVisualStyleBackColor = true;
+            this.findbttn.Click += new System.EventHandler(this.findbttn_Click);
+            // 
+            // findtxt
+            // 
+            this.findtxt.Location = new System.Drawing.Point(326, 40);
+            this.findtxt.Name = "findtxt";
+            this.findtxt.Size = new System.Drawing.Size(131, 20);
+            this.findtxt.TabIndex = 9;
+            this.findtxt.Text = "Input word";
+            // 
             // RECORDS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -101,11 +101,11 @@ namespace Contact_Tracing_App
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(569, 450);
+            this.Controls.Add(this.findtxt);
+            this.Controls.Add(this.findbttn);
             this.Controls.Add(this.finddate);
-            this.Controls.Add(this.find);
             this.Controls.Add(this.datefind);
             this.Controls.Add(this.viewallname);
-            this.Controls.Add(this.findatxtbox);
             this.Controls.Add(this.viewallrecords);
             this.DoubleBuffered = true;
             this.Name = "RECORDS";
@@ -118,10 +118,10 @@ namespace Contact_Tracing_App
         #endregion
 
         private System.Windows.Forms.Button viewallrecords;
-        private System.Windows.Forms.TextBox findatxtbox;
         private System.Windows.Forms.Button viewallname;
         private System.Windows.Forms.TextBox datefind;
-        private System.Windows.Forms.Button find;
         private System.Windows.Forms.Button finddate;
+        private System.Windows.Forms.Button findbttn;
+        private System.Windows.Forms.TextBox findtxt;
     }
 }

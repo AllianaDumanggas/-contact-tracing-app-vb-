@@ -61,7 +61,7 @@ namespace Contact_Tracing_App
             DataRecorded04.Add("Moderna");
             List<string> DataRecorded05 = new List<string>();
             DataRecorded05.Add("Bubbles Dela Cruz");
-            DataRecorded05.Add("female");
+            DataRecorded05.Add("Female");
             DataRecorded05.Add("56");
             DataRecorded05.Add("6/22/22");
             DataRecorded05.Add("Calamba,Laguna");
@@ -69,7 +69,7 @@ namespace Contact_Tracing_App
             DataRecorded05.Add("Moderna");
             List<string> DataRecorded06 = new List<string>();
             DataRecorded06.Add("Hannie Santos");
-            DataRecorded06.Add("female");
+            DataRecorded06.Add("Female");
             DataRecorded06.Add("22");
             DataRecorded06.Add("6/22/22");
             DataRecorded06.Add("Sta.Mesa, Manila");
@@ -79,79 +79,79 @@ namespace Contact_Tracing_App
 
             foreach (var item in DataRecorded01)
             {
-                if (DataRecorded01.Contains(findatxtbox.Text) == true)
+                if (DataRecorded01.Contains(findtxt.Text) == true)
                 {
                     if (true)
                     {
                         var list = string.Join(Environment.NewLine, DataRecorded01.ToArray());
                         MessageBox.Show(list);
                         break;
-                         
-
                     }
                 }
-                else if (DataRecorded02.Contains(findatxtbox.Text) == true)
+            }
+            foreach (var item in DataRecorded02)
+            {
+                if (DataRecorded02.Contains(findtxt.Text) == true)
                 {
                     if (true)
                     {
                         var list = string.Join(Environment.NewLine, DataRecorded02.ToArray());
                         MessageBox.Show(list);
                         break;
-
                     }
-
                 }
-                else if (DataRecorded03.Contains(findatxtbox.Text) == true)
+            }
+            foreach (var item in DataRecorded03)
+            {
+                if (DataRecorded03.Contains(findtxt.Text) == true)
                 {
                     if (true)
                     {
                         var list = string.Join(Environment.NewLine, DataRecorded03.ToArray());
                         MessageBox.Show(list);
                         break;
-
                     }
                 }
-                else if (DataRecorded04.Contains(findatxtbox.Text) == true)
+            }
+            foreach (var item in DataRecorded04)
+            {
+                if (DataRecorded04.Contains(findtxt.Text) == true)
                 {
                     if (true)
                     {
                         var list = string.Join(Environment.NewLine, DataRecorded04.ToArray());
                         MessageBox.Show(list);
                         break;
-
                     }
                 }
-                else if (DataRecorded05.Contains(findatxtbox.Text) == true)
+            }
+            foreach (var item in DataRecorded05)
+            {
+                if (DataRecorded05.Contains(findtxt.Text) == true)
                 {
                     if (true)
                     {
                         var list = string.Join(Environment.NewLine, DataRecorded05.ToArray());
                         MessageBox.Show(list);
                         break;
-
                     }
                 }
-                else if (DataRecorded06.Contains(findatxtbox.Text) == true)
+            }
+            foreach (var item in DataRecorded06 )
+            {
+                if (DataRecorded06.Contains(findtxt.Text) == true)
                 {
                     if (true)
                     {
                         var list = string.Join(Environment.NewLine, DataRecorded06.ToArray());
                         MessageBox.Show(list);
                         break;
-
                     }
                 }
-                else
-                {
-                    MessageBox.Show("No Results Found");
-                    break;
-                }
-
             }
         }
 
-         
-        private void ViewName()
+            private void ViewName()
         {
             List<string> Allname = new List<string>();
             Allname.Add("Alliana Dumanggas");
@@ -169,15 +169,7 @@ namespace Contact_Tracing_App
         {
             ViewName();
         }
-
          
-
-        private void find_Click(object sender, EventArgs e)
-        {
-            RECORDLIST();
-
-        }
-
         private void finddate_Click(object sender, EventArgs e)
         {
 
@@ -229,6 +221,8 @@ namespace Contact_Tracing_App
             DataRecorded06.Add("Sta.Mesa, Manila");
             DataRecorded06.Add("Pfizer");
             DataRecorded06.Add("Pfizer");
+
+
             foreach (var item in DataRecorded01)
             {
                 if (DataRecorded01.Contains(datefind.Text) == true)
@@ -307,6 +301,11 @@ namespace Contact_Tracing_App
 
                 }
             }
+        }
+
+        private void findbttn_Click(object sender, EventArgs e)
+        {
+            RECORDLIST();
         }
     }
 }
