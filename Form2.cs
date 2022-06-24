@@ -20,15 +20,10 @@ namespace Contact_Tracing_App
 
         private void viewallrecords_Click(object sender, EventArgs e)
         {
-            StreamReader reader = new StreamReader(@"C:\Users\universal\Documents\contact-tracing.txt");
-            String all = reader.ReadToEnd();
-            MessageBox.Show(all);
-
-            // while (!reader.EndOfStream)
-            //{
-            // String line =reader.Readline();
-            // MessageBox.Show (line);
-            //}
+            LISTRECORD f3 = new LISTRECORD();
+            f3.Show();
+            Visible = true;
+            
         }
 
         
@@ -38,12 +33,14 @@ namespace Contact_Tracing_App
             List<string> DataRecorded01 = new List<string>();
             DataRecorded01.Add("Alliana Dumanggas");
             DataRecorded01.Add("18");
+            DataRecorded01.Add("Female");
             DataRecorded01.Add("6/20/22");
             DataRecorded01.Add("Danlagan Padre Burgos Quezon");
             DataRecorded01.Add("Pfizer");
             DataRecorded01.Add("Pfizer");
             List<string> DataRecorded02 = new List<string>();
             DataRecorded02.Add("Marie Chan");
+            DataRecorded02.Add("Female");
             DataRecorded02.Add("41");
             DataRecorded02.Add("6/20/22");
             DataRecorded02.Add("Quezon City");
@@ -51,6 +48,7 @@ namespace Contact_Tracing_App
             DataRecorded02.Add("Pfizer");
             List<string> DataRecorded03 = new List<string>();
             DataRecorded03.Add("Manuel Cruz");
+            DataRecorded03.Add("Male");
             DataRecorded03.Add("33");
             DataRecorded03.Add("6/21/22");
             DataRecorded03.Add("Pasay City");
@@ -58,11 +56,13 @@ namespace Contact_Tracing_App
             DataRecorded03.Add("AstraZeneca");
             List<string> DataRecorded04 = new List<string>();
             DataRecorded04.Add("Jose Cruz");
+            DataRecorded04.Add("Male");
             DataRecorded04.Add("25");
             DataRecorded04.Add("6/21/22");
             DataRecorded04.Add("Pasay City");
             DataRecorded04.Add("Moderna");
             DataRecorded04.Add("Moderna");
+
 
             foreach (var item in DataRecorded01 )
             {
@@ -85,6 +85,7 @@ namespace Contact_Tracing_App
                         break;
                         
                     }
+                    
                 }
                 else if (DataRecorded03.Contains(findatxtbox.Text) == true)
                 {
@@ -127,6 +128,19 @@ namespace Contact_Tracing_App
 
             var names = string.Join(Environment.NewLine, Allname.ToArray());
             MessageBox.Show(names);
+        }
+
+        private void viewdate_Click_1(object sender, EventArgs e)
+        {
+            List<string> Date = new List<string>();
+            Date.Add("6/20/22, Alliana Dumanggas");
+            Date.Add("6/20/22, Marie Chan");
+            Date.Add("6/21/22, Manuel Cruz");
+            Date.Add("6/21/22, Jose Cruz ");
+
+
+            var date = string.Join(Environment.NewLine, Date.ToArray());
+            MessageBox.Show(date);
         }
     }
 }

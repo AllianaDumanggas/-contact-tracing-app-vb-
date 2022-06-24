@@ -9,3 +9,4 @@ C:\Users\universal\source\repos\Contact Tracing App\Contact Tracing App\obj\Debu
 C:\Users\universal\source\repos\Contact Tracing App\Contact Tracing App\obj\Debug\Contact Tracing App.exe
 C:\Users\universal\source\repos\Contact Tracing App\Contact Tracing App\obj\Debug\Contact Tracing App.pdb
 C:\Users\universal\source\repos\Contact Tracing App\Contact Tracing App\obj\Debug\Contact_Tracing_App.RECORDS.resources
+C:\Users\universal\source\repos\Contact Tracing App\Contact Tracing App\obj\Debug\Contact_Tracing_App.LISTRECORD.resources
