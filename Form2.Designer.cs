@@ -31,17 +31,37 @@ namespace Contact_Tracing_App
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RECORDS));
             this.viewallrecords = new System.Windows.Forms.Button();
+            this.Viewdate = new System.Windows.Forms.Button();
+            this.finddate = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // viewallrecords
             // 
-            this.viewallrecords.Location = new System.Drawing.Point(228, 90);
+            this.viewallrecords.Location = new System.Drawing.Point(215, 58);
             this.viewallrecords.Name = "viewallrecords";
             this.viewallrecords.Size = new System.Drawing.Size(137, 40);
             this.viewallrecords.TabIndex = 0;
             this.viewallrecords.Text = "VIEW ALL RECORDS";
             this.viewallrecords.UseVisualStyleBackColor = true;
             this.viewallrecords.Click += new System.EventHandler(this.viewallrecords_Click);
+            // 
+            // Viewdate
+            // 
+            this.Viewdate.Location = new System.Drawing.Point(161, 117);
+            this.Viewdate.Name = "Viewdate";
+            this.Viewdate.Size = new System.Drawing.Size(137, 34);
+            this.Viewdate.TabIndex = 1;
+            this.Viewdate.Text = "Viewdate";
+            this.Viewdate.UseVisualStyleBackColor = true;
+            this.Viewdate.Click += new System.EventHandler(this.Viewdate_Click);
+            // 
+            // finddate
+            // 
+            this.finddate.Location = new System.Drawing.Point(304, 125);
+            this.finddate.Name = "finddate";
+            this.finddate.Size = new System.Drawing.Size(187, 20);
+            this.finddate.TabIndex = 2;
+            this.finddate.Text = "insert date";
             // 
             // RECORDS
             // 
@@ -50,16 +70,21 @@ namespace Contact_Tracing_App
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(569, 450);
+            this.Controls.Add(this.finddate);
             this.Controls.Add(this.viewallrecords);
+            this.Controls.Add(this.Viewdate);
             this.DoubleBuffered = true;
             this.Name = "RECORDS";
             this.Text = "Form2";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
         private System.Windows.Forms.Button viewallrecords;
+        private System.Windows.Forms.Button Viewdate;
+        private System.Windows.Forms.TextBox finddate;
     }
 }

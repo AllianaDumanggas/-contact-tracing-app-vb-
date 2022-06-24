@@ -138,11 +138,6 @@ namespace Contact_Tracing_App
             AnswerAgain();
         }
 
-        private void exit_TextChanged(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
         private void view_Click(object sender, EventArgs e)
         {
             if (viewtxtbox.Text == "wearehometocare")
@@ -152,6 +147,11 @@ namespace Contact_Tracing_App
                 Visible = true;
             }
             
+        }
+
+        private void exit_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
