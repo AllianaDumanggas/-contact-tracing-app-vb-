@@ -31,63 +31,85 @@ namespace Contact_Tracing_App
             //}
         }
 
-        private void list()
-        {
-            List<string> Name= new List<string>();
-            Name.Add("Alliana Dumanggas");
-            Name.Add("Marie Chan");
-            Name.Add("Manuel Cruz");
-            Name.Add("Jose Cruz");
-
-            List<string> Age = new List<string>();
-            Age.Add("18");
-            Age.Add("41");
-            Age.Add("33");
-            Age.Add("25");
-
-            List<string> Date = new List<string>();
-            Date.Add("6/20/22");
-            Date.Add("6/20/22");
-            Date.Add("06/21/22");
-            Date.Add("06/21/22");
-
-            List<string> Address = new List<string>();
-            Address.Add("Danlagan Padre Burgos Quezon");
-            Address.Add("Quezon City");
-            Address.Add("Pasay City");
-            Address.Add("Pasay City");
-
-            List<string> VaccineTypefirstdose = new List<string>();
-            VaccineTypefirstdose.Add("Pfizer");
-            VaccineTypefirstdose.Add("AstraZeneca");
-            VaccineTypefirstdose.Add("Pfizer");
-            VaccineTypefirstdose.Add("Moderna");
-
-            List<string> VaccineTypeseconddose = new List<string>();
-            VaccineTypeseconddose.Add("Pfizer");
-            VaccineTypeseconddose.Add("AstraZeneca");
-            VaccineTypeseconddose.Add("Pfizer");
-            VaccineTypeseconddose.Add("Moderna");
-
-
-        }
+        
 
         private void Viewdate_Click(object sender, EventArgs e)
         {
-            List<string> Name = new List<string>();
-            Name.Add("Alliana Dumanggas");
-            Name.Add("Marie Chan");
-            Name.Add("Manuel Cruz");
-            Name.Add("Jose Cruz");
+            List<string> DataRecorded01 = new List<string>();
+            DataRecorded01.Add("Alliana Dumanggas");
+            DataRecorded01.Add("18");
+            DataRecorded01.Add("6/20/22");
+            DataRecorded01.Add("Danlagan Padre Burgos Quezon");
+            DataRecorded01.Add("Pfizer");
+            DataRecorded01.Add("Pfizer");
+            List<string> DataRecorded02 = new List<string>();
+            DataRecorded02.Add("Marie Chan");
+            DataRecorded02.Add("41");
+            DataRecorded02.Add("6/20/22");
+            DataRecorded02.Add("Quezon City");
+            DataRecorded02.Add("Pfizer");
+            DataRecorded02.Add("Pfizer");
+            List<string> DataRecorded03 = new List<string>();
+            DataRecorded03.Add("Manuel Cruz");
+            DataRecorded03.Add("33");
+            DataRecorded03.Add("6/21/22");
+            DataRecorded03.Add("Pasay City");
+            DataRecorded03.Add("AstraZeneca");
+            DataRecorded03.Add("AstraZeneca");
+            List<string> DataRecorded04 = new List<string>();
+            DataRecorded04.Add("Jose Cruz");
+            DataRecorded04.Add("25");
+            DataRecorded04.Add("6/21/22");
+            DataRecorded04.Add("Pasay City");
+            DataRecorded04.Add("Moderna");
+            DataRecorded04.Add("Moderna");
 
-            foreach (var item in Name)
+            foreach (var item in DataRecorded01 )
             {
-                if (Name.Contains(finddate.Text))
+                if (DataRecorded01.Contains(finddate.Text)== true)
                 {
-                    MessageBox.Show(item.ToString());
+                    if (true)
+                    {
+                        var list = string.Join(Environment.NewLine, DataRecorded01.ToArray());
+                        MessageBox.Show(list);
+                         
+                    } 
                 }
+                else if (DataRecorded02.Contains(finddate.Text) == true)
+                {
+                    if (true)
+                    {
+                        var list = string.Join(Environment.NewLine, DataRecorded02.ToArray());
+                        MessageBox.Show(list);
+                        
+                    }
+                }
+                else if (DataRecorded03.Contains(finddate.Text) == true)
+                {
+                    if (true)
+                    {
+                        var list = string.Join(Environment.NewLine, DataRecorded03.ToArray());
+                        MessageBox.Show(list);
+                         
+                    }
+                }
+                else if (DataRecorded03.Contains(finddate.Text) == true)
+                {
+                    if (true)
+                    {
+                        var list = string.Join(Environment.NewLine, DataRecorded03.ToArray());
+                        MessageBox.Show(list);
+                         
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("No Results Found");
+                    break;
+                }
+
             }
-            
+
 
         }
     }

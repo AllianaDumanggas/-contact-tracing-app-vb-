@@ -146,6 +146,10 @@ namespace Contact_Tracing_App
                 f2.Show();
                 Visible = true;
             }
+            else
+            {
+                MessageBox.Show("Incorrect Password");
+            }
             
         }
 
