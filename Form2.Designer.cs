@@ -31,31 +31,22 @@ namespace Contact_Tracing_App
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RECORDS));
             this.viewallrecords = new System.Windows.Forms.Button();
-            this.find = new System.Windows.Forms.Button();
             this.findatxtbox = new System.Windows.Forms.TextBox();
             this.viewallname = new System.Windows.Forms.Button();
-            this.viewdate = new System.Windows.Forms.Button();
+            this.datefind = new System.Windows.Forms.TextBox();
+            this.find = new System.Windows.Forms.Button();
+            this.finddate = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // viewallrecords
             // 
-            this.viewallrecords.Location = new System.Drawing.Point(220, 124);
+            this.viewallrecords.Location = new System.Drawing.Point(173, 115);
             this.viewallrecords.Name = "viewallrecords";
             this.viewallrecords.Size = new System.Drawing.Size(137, 40);
             this.viewallrecords.TabIndex = 0;
             this.viewallrecords.Text = "VIEW ALL RECORDS";
             this.viewallrecords.UseVisualStyleBackColor = true;
             this.viewallrecords.Click += new System.EventHandler(this.viewallrecords_Click);
-            // 
-            // find
-            // 
-            this.find.Location = new System.Drawing.Point(455, 36);
-            this.find.Name = "find";
-            this.find.Size = new System.Drawing.Size(102, 28);
-            this.find.TabIndex = 1;
-            this.find.Text = "Find";
-            this.find.UseVisualStyleBackColor = true;
-            this.find.Click += new System.EventHandler(this.Viewdate_Click);
             // 
             // findatxtbox
             // 
@@ -67,7 +58,7 @@ namespace Contact_Tracing_App
             // 
             // viewallname
             // 
-            this.viewallname.Location = new System.Drawing.Point(220, 170);
+            this.viewallname.Location = new System.Drawing.Point(173, 161);
             this.viewallname.Name = "viewallname";
             this.viewallname.Size = new System.Drawing.Size(137, 41);
             this.viewallname.TabIndex = 3;
@@ -75,15 +66,33 @@ namespace Contact_Tracing_App
             this.viewallname.UseVisualStyleBackColor = true;
             this.viewallname.Click += new System.EventHandler(this.viewallname_Click);
             // 
-            // viewdate
+            // datefind
             // 
-            this.viewdate.Location = new System.Drawing.Point(220, 217);
-            this.viewdate.Name = "viewdate";
-            this.viewdate.Size = new System.Drawing.Size(137, 41);
-            this.viewdate.TabIndex = 4;
-            this.viewdate.Text = "VIEW BY DATE";
-            this.viewdate.UseVisualStyleBackColor = true;
-            this.viewdate.Click += new System.EventHandler(this.viewdate_Click_1);
+            this.datefind.Location = new System.Drawing.Point(316, 220);
+            this.datefind.Name = "datefind";
+            this.datefind.Size = new System.Drawing.Size(133, 20);
+            this.datefind.TabIndex = 5;
+            this.datefind.Text = "m/dd/yy";
+            // 
+            // find
+            // 
+            this.find.Location = new System.Drawing.Point(456, 40);
+            this.find.Name = "find";
+            this.find.Size = new System.Drawing.Size(75, 23);
+            this.find.TabIndex = 6;
+            this.find.Text = "FIND";
+            this.find.UseVisualStyleBackColor = true;
+            this.find.Click += new System.EventHandler(this.find_Click);
+            // 
+            // finddate
+            // 
+            this.finddate.Location = new System.Drawing.Point(173, 208);
+            this.finddate.Name = "finddate";
+            this.finddate.Size = new System.Drawing.Size(137, 41);
+            this.finddate.TabIndex = 7;
+            this.finddate.Text = "FIND BY DATE";
+            this.finddate.UseVisualStyleBackColor = true;
+            this.finddate.Click += new System.EventHandler(this.finddate_Click);
             // 
             // RECORDS
             // 
@@ -92,11 +101,12 @@ namespace Contact_Tracing_App
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(569, 450);
-            this.Controls.Add(this.viewdate);
+            this.Controls.Add(this.finddate);
+            this.Controls.Add(this.find);
+            this.Controls.Add(this.datefind);
             this.Controls.Add(this.viewallname);
             this.Controls.Add(this.findatxtbox);
             this.Controls.Add(this.viewallrecords);
-            this.Controls.Add(this.find);
             this.DoubleBuffered = true;
             this.Name = "RECORDS";
             this.Text = "Form2";
@@ -108,9 +118,10 @@ namespace Contact_Tracing_App
         #endregion
 
         private System.Windows.Forms.Button viewallrecords;
-        private System.Windows.Forms.Button find;
         private System.Windows.Forms.TextBox findatxtbox;
         private System.Windows.Forms.Button viewallname;
-        private System.Windows.Forms.Button viewdate;
+        private System.Windows.Forms.TextBox datefind;
+        private System.Windows.Forms.Button find;
+        private System.Windows.Forms.Button finddate;
     }
 }
