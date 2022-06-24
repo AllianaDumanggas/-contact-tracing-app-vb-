@@ -90,8 +90,8 @@ namespace Contact_Tracing_App
         {
 
             StreamWriter file = new StreamWriter(@"C:\Users\universal\Documents\contact-tracing.txt", true);
-            file.WriteLine("Complete Name: " + nametb.Text);
             file.WriteLine("Date: " + datetb.Text);
+            file.WriteLine("Complete Name: " + nametb.Text);
             file.WriteLine("Age: " + agetb.Text);
             file.WriteLine("Gender: " + gendertb.Text);
             file.WriteLine("Contact Number: " + contacttb.Text);
@@ -133,29 +133,27 @@ namespace Contact_Tracing_App
             vaccinetype2bt.Text = "";
 
         }
-        private void answeragainmenu_Click(object sender, EventArgs e)
+        private void anweragain_Click(object sender, EventArgs e)
         {
             AnswerAgain();
-
         }
 
-        private void exitmenu_Click(object sender, EventArgs e)
+        private void exit_TextChanged(object sender, EventArgs e)
         {
             this.Close();
         }
 
-        private void viewmenu_Click(object sender, EventArgs e)
+        private void view_Click(object sender, EventArgs e)
         {
-            StreamReader reader = new StreamReader(@"C:\Users\universal\Documents\contact-tracing.txt");
-                String all = reader.ReadToEnd();
-                MessageBox.Show(all);
+            if (viewtxtbox.Text == "wearehometocare")
+            {
+                RECORDS f2 = new RECORDS();
+                f2.Show();
+                Visible = false;
+            }
             
-            // while (!reader.EndOfStream)
-            //{
-            // String line =reader.Readline();
-            // MessageBox.Show (line);
-            //}
         }
     }
 }
+ 
  

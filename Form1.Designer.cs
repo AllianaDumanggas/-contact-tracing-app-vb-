@@ -72,13 +72,11 @@ namespace Contact_Tracing_App
             this.datetb = new System.Windows.Forms.TextBox();
             this.input1 = new System.Windows.Forms.Label();
             this.q1tb = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.MENU = new System.Windows.Forms.MenuStrip();
-            this.mENUToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.answeragainmenu = new System.Windows.Forms.ToolStripMenuItem();
-            this.viewmenu = new System.Windows.Forms.ToolStripMenuItem();
-            this.exitmenu = new System.Windows.Forms.ToolStripMenuItem();
-            this.MENU.SuspendLayout();
+            this.anweragain = new System.Windows.Forms.Button();
+            this.exit = new System.Windows.Forms.TextBox();
+            this.view = new System.Windows.Forms.Button();
+            this.viewtxtbox = new System.Windows.Forms.TextBox();
+            this.viewlabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // name
@@ -416,9 +414,9 @@ namespace Contact_Tracing_App
             // submit
             // 
             this.submit.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.submit.Location = new System.Drawing.Point(299, 637);
+            this.submit.Location = new System.Drawing.Point(285, 563);
             this.submit.Name = "submit";
-            this.submit.Size = new System.Drawing.Size(117, 40);
+            this.submit.Size = new System.Drawing.Size(117, 29);
             this.submit.TabIndex = 41;
             this.submit.Text = "SUBMIT";
             this.submit.UseVisualStyleBackColor = false;
@@ -455,54 +453,54 @@ namespace Contact_Tracing_App
             this.q1tb.Size = new System.Drawing.Size(123, 20);
             this.q1tb.TabIndex = 13;
             // 
-            // comboBox1
+            // anweragain
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(218, 586);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 46;
+            this.anweragain.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.anweragain.Location = new System.Drawing.Point(532, 27);
+            this.anweragain.Name = "anweragain";
+            this.anweragain.Size = new System.Drawing.Size(105, 29);
+            this.anweragain.TabIndex = 48;
+            this.anweragain.Text = "ANSWER AGAIN";
+            this.anweragain.UseVisualStyleBackColor = false;
+            this.anweragain.Click += new System.EventHandler(this.anweragain_Click);
             // 
-            // MENU
+            // exit
             // 
-            this.MENU.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mENUToolStripMenuItem});
-            this.MENU.Location = new System.Drawing.Point(0, 0);
-            this.MENU.Name = "MENU";
-            this.MENU.Size = new System.Drawing.Size(637, 24);
-            this.MENU.TabIndex = 47;
-            this.MENU.Text = "MENU";
+            this.exit.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.exit.Location = new System.Drawing.Point(532, 62);
+            this.exit.Name = "exit";
+            this.exit.Size = new System.Drawing.Size(105, 20);
+            this.exit.TabIndex = 49;
+            this.exit.Text = "EXIT";
+            this.exit.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.exit.TextChanged += new System.EventHandler(this.exit_TextChanged);
             // 
-            // mENUToolStripMenuItem
+            // view
             // 
-            this.mENUToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.answeragainmenu,
-            this.viewmenu,
-            this.exitmenu});
-            this.mENUToolStripMenuItem.Name = "mENUToolStripMenuItem";
-            this.mENUToolStripMenuItem.Size = new System.Drawing.Size(53, 20);
-            this.mENUToolStripMenuItem.Text = "MENU";
+            this.view.Location = new System.Drawing.Point(327, 697);
+            this.view.Name = "view";
+            this.view.Size = new System.Drawing.Size(75, 23);
+            this.view.TabIndex = 50;
+            this.view.Text = "VIEW";
+            this.view.UseVisualStyleBackColor = true;
+            this.view.Click += new System.EventHandler(this.view_Click);
             // 
-            // answeragainmenu
+            // viewtxtbox
             // 
-            this.answeragainmenu.Name = "answeragainmenu";
-            this.answeragainmenu.Size = new System.Drawing.Size(180, 22);
-            this.answeragainmenu.Text = "ANSWER AGAIN";
-            this.answeragainmenu.Click += new System.EventHandler(this.answeragainmenu_Click);
+            this.viewtxtbox.Location = new System.Drawing.Point(285, 671);
+            this.viewtxtbox.Name = "viewtxtbox";
+            this.viewtxtbox.Size = new System.Drawing.Size(168, 20);
+            this.viewtxtbox.TabIndex = 51;
+            this.viewtxtbox.Text = "enter password";
             // 
-            // viewmenu
+            // viewlabel
             // 
-            this.viewmenu.Name = "viewmenu";
-            this.viewmenu.Size = new System.Drawing.Size(180, 22);
-            this.viewmenu.Text = "VIEW RECORD";
-            this.viewmenu.Click += new System.EventHandler(this.viewmenu_Click);
-            // 
-            // exitmenu
-            // 
-            this.exitmenu.Name = "exitmenu";
-            this.exitmenu.Size = new System.Drawing.Size(180, 22);
-            this.exitmenu.Text = "EXIT";
-            this.exitmenu.Click += new System.EventHandler(this.exitmenu_Click);
+            this.viewlabel.AutoSize = true;
+            this.viewlabel.Location = new System.Drawing.Point(252, 643);
+            this.viewlabel.Name = "viewlabel";
+            this.viewlabel.Size = new System.Drawing.Size(228, 13);
+            this.viewlabel.TabIndex = 52;
+            this.viewlabel.Text = "VIEW RECORD (for authorized personnel only)";
             // 
             // contacttracing
             // 
@@ -510,8 +508,12 @@ namespace Contact_Tracing_App
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(637, 749);
-            this.Controls.Add(this.comboBox1);
+            this.ClientSize = new System.Drawing.Size(649, 749);
+            this.Controls.Add(this.viewlabel);
+            this.Controls.Add(this.viewtxtbox);
+            this.Controls.Add(this.view);
+            this.Controls.Add(this.exit);
+            this.Controls.Add(this.anweragain);
             this.Controls.Add(this.submit);
             this.Controls.Add(this.datetb);
             this.Controls.Add(this.nametb);
@@ -554,14 +556,10 @@ namespace Contact_Tracing_App
             this.Controls.Add(this.age);
             this.Controls.Add(this.address);
             this.Controls.Add(this.name);
-            this.Controls.Add(this.MENU);
             this.DoubleBuffered = true;
-            this.MainMenuStrip = this.MENU;
             this.MaximizeBox = false;
             this.Name = "contacttracing";
             this.Text = "CONTACT TRACING";
-            this.MENU.ResumeLayout(false);
-            this.MENU.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -611,12 +609,11 @@ namespace Contact_Tracing_App
         private System.Windows.Forms.TextBox datetb;
         private System.Windows.Forms.Label input1;
         private System.Windows.Forms.TextBox q1tb;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.MenuStrip MENU;
-        private System.Windows.Forms.ToolStripMenuItem mENUToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem answeragainmenu;
-        private System.Windows.Forms.ToolStripMenuItem viewmenu;
-        private System.Windows.Forms.ToolStripMenuItem exitmenu;
+        private System.Windows.Forms.Button anweragain;
+        private System.Windows.Forms.TextBox exit;
+        private System.Windows.Forms.Button view;
+        private System.Windows.Forms.TextBox viewtxtbox;
+        private System.Windows.Forms.Label viewlabel;
     }
 }
 
