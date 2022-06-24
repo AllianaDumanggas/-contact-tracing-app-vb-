@@ -66,39 +66,43 @@ namespace Contact_Tracing_App
 
             foreach (var item in DataRecorded01 )
             {
-                if (DataRecorded01.Contains(finddate.Text)== true)
+                if (DataRecorded01.Contains(findatxtbox.Text)== true)
                 {
                     if (true)
                     {
                         var list = string.Join(Environment.NewLine, DataRecorded01.ToArray());
                         MessageBox.Show(list);
+                        break;
                          
                     } 
                 }
-                else if (DataRecorded02.Contains(finddate.Text) == true)
+                else if (DataRecorded02.Contains(findatxtbox.Text) == true)
                 {
                     if (true)
                     {
                         var list = string.Join(Environment.NewLine, DataRecorded02.ToArray());
                         MessageBox.Show(list);
+                        break;
                         
                     }
                 }
-                else if (DataRecorded03.Contains(finddate.Text) == true)
+                else if (DataRecorded03.Contains(findatxtbox.Text) == true)
                 {
                     if (true)
                     {
                         var list = string.Join(Environment.NewLine, DataRecorded03.ToArray());
                         MessageBox.Show(list);
+                        break;
                          
                     }
                 }
-                else if (DataRecorded03.Contains(finddate.Text) == true)
+                else if (DataRecorded04.Contains(findatxtbox.Text) == true)
                 {
                     if (true)
                     {
-                        var list = string.Join(Environment.NewLine, DataRecorded03.ToArray());
+                        var list = string.Join(Environment.NewLine, DataRecorded04.ToArray());
                         MessageBox.Show(list);
+                        break;
                          
                     }
                 }
@@ -111,6 +115,18 @@ namespace Contact_Tracing_App
             }
 
 
+        }
+
+        private void viewallname_Click(object sender, EventArgs e)
+        {
+            List<string> Allname = new List<string>();
+            Allname.Add("Alliana Dumanggas");
+            Allname.Add("Marie Chan");
+            Allname.Add("Manuel Cruz");
+            Allname.Add("Jose Cruz ");
+
+            var names = string.Join(Environment.NewLine, Allname.ToArray());
+            MessageBox.Show(names);
         }
     }
 }
