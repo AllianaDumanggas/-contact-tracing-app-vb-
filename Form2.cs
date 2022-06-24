@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace Contact_Tracing_App
 {
@@ -17,11 +18,17 @@ namespace Contact_Tracing_App
             InitializeComponent();
         }
 
-         
-
-        private void formanswer_Click(object sender, EventArgs e)
+        private void viewallrecords_Click(object sender, EventArgs e)
         {
-             
+            StreamReader reader = new StreamReader(@"C:\Users\universal\Documents\contact-tracing.txt");
+            String all = reader.ReadToEnd();
+            MessageBox.Show(all);
+
+            // while (!reader.EndOfStream)
+            //{
+            // String line =reader.Readline();
+            // MessageBox.Show (line);
+            //}
         }
     }
 }

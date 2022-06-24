@@ -149,7 +149,7 @@ namespace Contact_Tracing_App
             {
                 RECORDS f2 = new RECORDS();
                 f2.Show();
-                Visible = false;
+                Visible = true;
             }
             
         }

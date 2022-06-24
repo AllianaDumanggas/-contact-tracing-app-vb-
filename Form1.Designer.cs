@@ -477,7 +477,7 @@ namespace Contact_Tracing_App
             // 
             // view
             // 
-            this.view.Location = new System.Drawing.Point(327, 697);
+            this.view.Location = new System.Drawing.Point(313, 646);
             this.view.Name = "view";
             this.view.Size = new System.Drawing.Size(75, 23);
             this.view.TabIndex = 50;
@@ -487,7 +487,7 @@ namespace Contact_Tracing_App
             // 
             // viewtxtbox
             // 
-            this.viewtxtbox.Location = new System.Drawing.Point(285, 671);
+            this.viewtxtbox.Location = new System.Drawing.Point(269, 620);
             this.viewtxtbox.Name = "viewtxtbox";
             this.viewtxtbox.Size = new System.Drawing.Size(168, 20);
             this.viewtxtbox.TabIndex = 51;
@@ -496,7 +496,7 @@ namespace Contact_Tracing_App
             // viewlabel
             // 
             this.viewlabel.AutoSize = true;
-            this.viewlabel.Location = new System.Drawing.Point(252, 643);
+            this.viewlabel.Location = new System.Drawing.Point(242, 604);
             this.viewlabel.Name = "viewlabel";
             this.viewlabel.Size = new System.Drawing.Size(228, 13);
             this.viewlabel.TabIndex = 52;
