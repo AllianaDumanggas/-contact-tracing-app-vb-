@@ -77,6 +77,12 @@ namespace Contact_Tracing_App
             this.exit = new System.Windows.Forms.Button();
             this.generateqr = new System.Windows.Forms.Button();
             this.qrgeneratelabel = new System.Windows.Forms.Label();
+            this.combocam = new System.Windows.Forms.ComboBox();
+            this.camera = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.dataofqr = new System.Windows.Forms.TextBox();
+            this.Start = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // name
@@ -504,6 +510,53 @@ namespace Contact_Tracing_App
             this.qrgeneratelabel.TabIndex = 55;
             this.qrgeneratelabel.Text = "Generate your own QR code  ";
             // 
+            // combocam
+            // 
+            this.combocam.FormattingEnabled = true;
+            this.combocam.Location = new System.Drawing.Point(807, 124);
+            this.combocam.Name = "combocam";
+            this.combocam.Size = new System.Drawing.Size(188, 21);
+            this.combocam.TabIndex = 56;
+            // 
+            // camera
+            // 
+            this.camera.AutoSize = true;
+            this.camera.Location = new System.Drawing.Point(755, 127);
+            this.camera.Name = "camera";
+            this.camera.Size = new System.Drawing.Size(46, 13);
+            this.camera.TabIndex = 57;
+            this.camera.Text = "Camera:";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.LightBlue;
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox1.Location = new System.Drawing.Point(687, 154);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(318, 312);
+            this.pictureBox1.TabIndex = 58;
+            this.pictureBox1.TabStop = false;
+            // 
+            // dataofqr
+            // 
+            this.dataofqr.BackColor = System.Drawing.Color.RoyalBlue;
+            this.dataofqr.ForeColor = System.Drawing.Color.White;
+            this.dataofqr.Location = new System.Drawing.Point(687, 473);
+            this.dataofqr.Multiline = true;
+            this.dataofqr.Name = "dataofqr";
+            this.dataofqr.Size = new System.Drawing.Size(318, 140);
+            this.dataofqr.TabIndex = 59;
+            // 
+            // Start
+            // 
+            this.Start.BackColor = System.Drawing.Color.LightPink;
+            this.Start.Location = new System.Drawing.Point(807, 619);
+            this.Start.Name = "Start";
+            this.Start.Size = new System.Drawing.Size(105, 38);
+            this.Start.TabIndex = 60;
+            this.Start.Text = "START:";
+            this.Start.UseVisualStyleBackColor = false;
+            // 
             // contacttracing
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -511,6 +564,11 @@ namespace Contact_Tracing_App
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1035, 749);
+            this.Controls.Add(this.Start);
+            this.Controls.Add(this.dataofqr);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.camera);
+            this.Controls.Add(this.combocam);
             this.Controls.Add(this.qrgeneratelabel);
             this.Controls.Add(this.generateqr);
             this.Controls.Add(this.exit);
@@ -562,6 +620,7 @@ namespace Contact_Tracing_App
             this.Name = "contacttracing";
             this.Text = "CONTACT TRACING";
             this.Load += new System.EventHandler(this.contacttracing_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -616,6 +675,11 @@ namespace Contact_Tracing_App
         private System.Windows.Forms.Button exit;
         private System.Windows.Forms.Button generateqr;
         private System.Windows.Forms.Label qrgeneratelabel;
+        private System.Windows.Forms.ComboBox combocam;
+        private System.Windows.Forms.Label camera;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.TextBox dataofqr;
+        private System.Windows.Forms.Button Start;
     }
 }
 
