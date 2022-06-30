@@ -159,7 +159,12 @@ namespace Contact_Tracing_App
 
         private void contacttracing_Load(object sender, EventArgs e)
         {
-
+            filterInfoCollection = new FilterInfoCollection(FilterCategory.VideoInputDevice);
+            foreach (FilterInfo filterInfo in filterInfoCollection)
+            {
+                combocam.Items.Add(filterInfo.Name);
+                combocam.SelectedIndex = 0;
+            }
         }
 
         private void generateqr_Click(object sender, EventArgs e)
@@ -181,6 +186,7 @@ namespace Contact_Tracing_App
         {
             campicbox.Image = (Bitmap)eventArgs.Frame.Clone();
         }
+
     }
 }
  
