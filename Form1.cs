@@ -197,7 +197,22 @@ namespace Contact_Tracing_App
 
         private void timer1_Tick(object sender, EventArgs e)
         {
+            if (campicbox != null)
+            {
+                BarcodeReader barcodereader = new BarcodeReader();
+                Result resultofscanning = barcodereader.Decode((Bitmap)campicbox.Image);
 
+                if (resultofscanning != null)
+                {
+                    dataofqr.Text = resultofscanning.ToString();
+                    
+                }
+                qrtimer.Stop();
+                if (captureDevice.IsRunning)
+                {
+                    captureDevice.Stop();
+                }
+            }
         }
     }
 }

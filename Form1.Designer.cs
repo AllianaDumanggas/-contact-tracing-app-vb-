@@ -83,7 +83,7 @@ namespace Contact_Tracing_App
             this.campicbox = new System.Windows.Forms.PictureBox();
             this.dataofqr = new System.Windows.Forms.TextBox();
             this.Start = new System.Windows.Forms.Button();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.qrtimer = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.campicbox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -560,9 +560,9 @@ namespace Contact_Tracing_App
             this.Start.UseVisualStyleBackColor = false;
             this.Start.Click += new System.EventHandler(this.Start_Click);
             // 
-            // timer1
+            // qrtimer
             // 
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            this.qrtimer.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // contacttracing
             // 
@@ -688,7 +688,7 @@ namespace Contact_Tracing_App
         private System.Windows.Forms.PictureBox campicbox;
         private System.Windows.Forms.TextBox dataofqr;
         private System.Windows.Forms.Button Start;
-        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Timer qrtimer;
     }
 }
 
