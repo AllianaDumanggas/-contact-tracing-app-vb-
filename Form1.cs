@@ -8,8 +8,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
 using System.IO;
+using AForge.Video;
+using AForge.Video.DirectShow;
+using ZXing;
 
 namespace Contact_Tracing_App
 {
@@ -20,6 +22,8 @@ namespace Contact_Tracing_App
             InitializeComponent();
         }
 
+        FilterInfoCollection filterInfoCollection;
+        VideoCaptureDevice captureDevice;
 
 
         private void CheckAllBoxes()
@@ -163,6 +167,19 @@ namespace Contact_Tracing_App
             generatingqrcode f4 = new generatingqrcode();
             f4.Show();
             Visible = true;
+        }
+
+        private void Start_Click(object sender, EventArgs e)
+        {
+            captureDevice = new VideoCaptureDevice(filterInfoCollection[combocam.SelectedIndex].MonikerString);
+            captureDevice.NewFrame += CaptureDevice_NewFrame;
+            captureDevice.Start();
+
+        }
+
+        private void CaptureDevice_NewFrame(object sender, NewFrameEventArgs eventArgs)
+        {
+            campicbox.Image = (Bitmap)eventArgs.Frame.Clone();
         }
     }
 }
