@@ -42,13 +42,13 @@ namespace Contact_Tracing_App
             this.qrpicbox.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.qrpicbox.Location = new System.Drawing.Point(26, 66);
             this.qrpicbox.Name = "qrpicbox";
-            this.qrpicbox.Size = new System.Drawing.Size(306, 260);
+            this.qrpicbox.Size = new System.Drawing.Size(401, 329);
             this.qrpicbox.TabIndex = 0;
             this.qrpicbox.TabStop = false;
             // 
             // info
             // 
-            this.info.Location = new System.Drawing.Point(347, 66);
+            this.info.Location = new System.Drawing.Point(449, 75);
             this.info.Multiline = true;
             this.info.Name = "info";
             this.info.Size = new System.Drawing.Size(252, 173);
@@ -58,7 +58,7 @@ namespace Contact_Tracing_App
             // 
             this.generate_qr.BackColor = System.Drawing.Color.Gray;
             this.generate_qr.ForeColor = System.Drawing.Color.White;
-            this.generate_qr.Location = new System.Drawing.Point(434, 245);
+            this.generate_qr.Location = new System.Drawing.Point(534, 279);
             this.generate_qr.Name = "generate_qr";
             this.generate_qr.Size = new System.Drawing.Size(113, 34);
             this.generate_qr.TabIndex = 2;
@@ -79,7 +79,7 @@ namespace Contact_Tracing_App
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(631, 450);
+            this.ClientSize = new System.Drawing.Size(727, 511);
             this.Controls.Add(this.generatedqrlabel);
             this.Controls.Add(this.generate_qr);
             this.Controls.Add(this.info);
