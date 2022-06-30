@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+
 using System.IO;
 
 namespace Contact_Tracing_App
@@ -156,6 +157,11 @@ namespace Contact_Tracing_App
         private void exit_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void contacttracing_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

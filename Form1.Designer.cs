@@ -508,7 +508,7 @@ namespace Contact_Tracing_App
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(649, 749);
+            this.ClientSize = new System.Drawing.Size(652, 749);
             this.Controls.Add(this.exit);
             this.Controls.Add(this.viewlabel);
             this.Controls.Add(this.viewtxtbox);
@@ -557,9 +557,9 @@ namespace Contact_Tracing_App
             this.Controls.Add(this.address);
             this.Controls.Add(this.name);
             this.DoubleBuffered = true;
-            this.MaximizeBox = false;
             this.Name = "contacttracing";
             this.Text = "CONTACT TRACING";
+            this.Load += new System.EventHandler(this.contacttracing_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
