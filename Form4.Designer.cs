@@ -40,15 +40,15 @@ namespace Contact_Tracing_App
             // 
             this.qrpicbox.BackColor = System.Drawing.Color.MistyRose;
             this.qrpicbox.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.qrpicbox.Location = new System.Drawing.Point(26, 66);
+            this.qrpicbox.Location = new System.Drawing.Point(12, 75);
             this.qrpicbox.Name = "qrpicbox";
-            this.qrpicbox.Size = new System.Drawing.Size(401, 329);
+            this.qrpicbox.Size = new System.Drawing.Size(445, 424);
             this.qrpicbox.TabIndex = 0;
             this.qrpicbox.TabStop = false;
             // 
             // info
             // 
-            this.info.Location = new System.Drawing.Point(449, 75);
+            this.info.Location = new System.Drawing.Point(463, 75);
             this.info.Multiline = true;
             this.info.Name = "info";
             this.info.Size = new System.Drawing.Size(252, 173);

@@ -198,7 +198,7 @@ namespace Contact_Tracing_App
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            if (campicbox != null)
+            if (campicbox.Image != null)
             {
                 BarcodeReader barcodereader = new BarcodeReader();
                 Result resultofscanning = barcodereader.Decode((Bitmap)campicbox.Image);
@@ -212,17 +212,19 @@ namespace Contact_Tracing_App
                     data = str.Split(separator);
                     string myname = data[1];
                     nametb.Text = myname;
-                    string myage = data[2];
+                    string myage = data[3];
                     agetb.Text = myage;
-                    string mygender = data[3];
+                    string mygender = data[5];
                     gendertb.Text = mygender;
-                    string mycontactnum = data[4];
+                    string mycontactnum = data[7];
                     contacttb.Text = mycontactnum;
-                    string firstdose = data[5];
+                    string firstdose = data[9];
                     firstdosetb.Text = firstdose;
-                    string vaccinetypeone = data[6];
+                    string seconddose = data[13];
+                    seconddosetb.Text = seconddose;
+                    string vaccinetypeone = data[11];
                     vaccinetype1tb.Text = vaccinetypeone;
-                    string vaccinetypetwo = data[7];
+                    string vaccinetypetwo = data[15];
                     vaccinetype2bt.Text = vaccinetypetwo;
 
                     
