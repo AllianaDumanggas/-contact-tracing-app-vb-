@@ -206,6 +206,26 @@ namespace Contact_Tracing_App
                 if (resultofscanning != null)
                 {
                     dataofqr.Text = resultofscanning.ToString();
+                    var str = dataofqr.Text;
+                    char[] separator = { ':' };
+                    string[] data = null;
+                    data = str.Split(separator);
+                    string myname = data[1];
+                    nametb.Text = myname;
+                    string myage = data[2];
+                    agetb.Text = myage;
+                    string mygender = data[3];
+                    gendertb.Text = mygender;
+                    string mycontactnum = data[4];
+                    contacttb.Text = mycontactnum;
+                    string firstdose = data[5];
+                    firstdosetb.Text = firstdose;
+                    string vaccinetypeone = data[6];
+                    vaccinetype1tb.Text = vaccinetypeone;
+                    string vaccinetypetwo = data[7];
+                    vaccinetype2bt.Text = vaccinetypetwo;
+
+                    
                     
                 }
                 qrtimer.Stop();
