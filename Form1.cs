@@ -179,6 +179,7 @@ namespace Contact_Tracing_App
             captureDevice = new VideoCaptureDevice(filterInfoCollection[combocam.SelectedIndex].MonikerString);
             captureDevice.NewFrame += CaptureDevice_NewFrame;
             captureDevice.Start();
+            qrtimer.Start();
 
         }
 
