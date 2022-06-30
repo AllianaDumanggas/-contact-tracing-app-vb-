@@ -109,7 +109,7 @@ namespace Contact_Tracing_App
             this.Controls.Add(this.viewallrecords);
             this.DoubleBuffered = true;
             this.Name = "RECORDS";
-            this.Text = "Form2";
+            this.Text = "Display";
             this.ResumeLayout(false);
             this.PerformLayout();
 

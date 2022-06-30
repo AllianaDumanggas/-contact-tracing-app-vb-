@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace Contact_Tracing_App
 {
-    public partial class Form4 : Form
+    public partial class generatingqrcode : Form
     {
-        public Form4()
+        public generatingqrcode()
         {
             InitializeComponent();
+        }
+
+        private void generate_qr_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

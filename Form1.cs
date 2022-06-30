@@ -44,10 +44,6 @@ namespace Contact_Tracing_App
             {
                 MessageBox.Show("Please fill out the form Completely");
             }
-            else if (temptb.Text == "")
-            {
-                MessageBox.Show("Please fill out the form Completely");
-            }
             else if (addresstb.Text == "")
             {
                 MessageBox.Show("Please fill out the form Completely");
@@ -96,7 +92,6 @@ namespace Contact_Tracing_App
             file.WriteLine("Age: " + agetb.Text);
             file.WriteLine("Gender: " + gendertb.Text);
             file.WriteLine("Contact Number: " + contacttb.Text);
-            file.WriteLine("Temparature: " + temptb.Text);
             file.WriteLine("Address: " + addresstb.Text);
             file.WriteLine("Symptoms Experiencing/Experienced: " + q1tb.Text);
             file.WriteLine("Date when Symptoms start Experiencing/Experience: " + ddmmyytb.Text);
@@ -122,7 +117,6 @@ namespace Contact_Tracing_App
             agetb.Text = "";
             gendertb.Text = "";
             contacttb.Text = "";
-            temptb.Text = "";
             addresstb.Text = "";
             q1tb.Text = "";
             ddmmyytb.Text = "";
@@ -162,6 +156,13 @@ namespace Contact_Tracing_App
         private void contacttracing_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void generateqr_Click(object sender, EventArgs e)
+        {
+            generatingqrcode f4 = new generatingqrcode();
+            f4.Show();
+            Visible = true;
         }
     }
 }

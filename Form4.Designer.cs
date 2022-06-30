@@ -1,7 +1,7 @@
 ﻿
 namespace Contact_Tracing_App
 {
-    partial class Form4
+    partial class generatingqrcode
     {
         /// <summary>
         /// Required designer variable.
@@ -29,12 +29,74 @@ namespace Contact_Tracing_App
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.qrpicbox = new System.Windows.Forms.PictureBox();
+            this.info = new System.Windows.Forms.TextBox();
+            this.generate_qr = new System.Windows.Forms.Button();
+            this.generatedqrlabel = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.qrpicbox)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // qrpicbox
+            // 
+            this.qrpicbox.BackColor = System.Drawing.Color.MistyRose;
+            this.qrpicbox.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.qrpicbox.Location = new System.Drawing.Point(26, 66);
+            this.qrpicbox.Name = "qrpicbox";
+            this.qrpicbox.Size = new System.Drawing.Size(306, 260);
+            this.qrpicbox.TabIndex = 0;
+            this.qrpicbox.TabStop = false;
+            // 
+            // info
+            // 
+            this.info.Location = new System.Drawing.Point(347, 66);
+            this.info.Multiline = true;
+            this.info.Name = "info";
+            this.info.Size = new System.Drawing.Size(252, 173);
+            this.info.TabIndex = 1;
+            // 
+            // generate_qr
+            // 
+            this.generate_qr.BackColor = System.Drawing.Color.Gray;
+            this.generate_qr.ForeColor = System.Drawing.Color.White;
+            this.generate_qr.Location = new System.Drawing.Point(434, 245);
+            this.generate_qr.Name = "generate_qr";
+            this.generate_qr.Size = new System.Drawing.Size(113, 34);
+            this.generate_qr.TabIndex = 2;
+            this.generate_qr.Text = "Generate";
+            this.generate_qr.UseVisualStyleBackColor = false;
+            this.generate_qr.Click += new System.EventHandler(this.generate_qr_Click);
+            // 
+            // generatedqrlabel
+            // 
+            this.generatedqrlabel.AutoSize = true;
+            this.generatedqrlabel.Location = new System.Drawing.Point(23, 50);
+            this.generatedqrlabel.Name = "generatedqrlabel";
+            this.generatedqrlabel.Size = new System.Drawing.Size(79, 13);
+            this.generatedqrlabel.TabIndex = 3;
+            this.generatedqrlabel.Text = "Generated QR:";
+            // 
+            // generatingqrcode
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form4";
+            this.ClientSize = new System.Drawing.Size(631, 450);
+            this.Controls.Add(this.generatedqrlabel);
+            this.Controls.Add(this.generate_qr);
+            this.Controls.Add(this.info);
+            this.Controls.Add(this.qrpicbox);
+            this.Name = "generatingqrcode";
+            this.Text = "Generating QR Code";
+            ((System.ComponentModel.ISupportInitialize)(this.qrpicbox)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private System.Windows.Forms.PictureBox qrpicbox;
+        private System.Windows.Forms.TextBox info;
+        private System.Windows.Forms.Button generate_qr;
+        private System.Windows.Forms.Label generatedqrlabel;
     }
 }
