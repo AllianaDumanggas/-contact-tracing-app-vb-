@@ -10,3 +10,6 @@ C:\Users\universal\source\repos\Contact Tracing App\Contact Tracing App\obj\Debu
 C:\Users\universal\source\repos\Contact Tracing App\Contact Tracing App\obj\Debug\Contact Tracing App.pdb
 C:\Users\universal\source\repos\Contact Tracing App\Contact Tracing App\obj\Debug\Contact_Tracing_App.RECORDS.resources
 C:\Users\universal\source\repos\Contact Tracing App\Contact Tracing App\obj\Debug\Contact_Tracing_App.LISTRECORD.resources
+C:\Users\universal\source\repos\Contact Tracing App\Contact Tracing App\bin\Debug\QRCoder.dll
+C:\Users\universal\source\repos\Contact Tracing App\Contact Tracing App\obj\Debug\Contact_Tracing_App.generatingqrcode.resources
+C:\Users\universal\source\repos\Contact Tracing App\Contact Tracing App\obj\Debug\Contact Tracing App.csproj.CopyComplete
