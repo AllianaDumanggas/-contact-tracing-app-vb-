@@ -187,6 +187,18 @@ namespace Contact_Tracing_App
             campicbox.Image = (Bitmap)eventArgs.Frame.Clone();
         }
 
+        private void contacttracing_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            if (captureDevice.IsRunning)
+            {
+                captureDevice.Stop();
+            }
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+
+        }
     }
 }
  

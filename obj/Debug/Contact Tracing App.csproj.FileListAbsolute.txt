@@ -13,3 +13,13 @@ C:\Users\universal\source\repos\Contact Tracing App\Contact Tracing App\obj\Debu
 C:\Users\universal\source\repos\Contact Tracing App\Contact Tracing App\bin\Debug\QRCoder.dll
 C:\Users\universal\source\repos\Contact Tracing App\Contact Tracing App\obj\Debug\Contact_Tracing_App.generatingqrcode.resources
 C:\Users\universal\source\repos\Contact Tracing App\Contact Tracing App\obj\Debug\Contact Tracing App.csproj.CopyComplete
+C:\Users\universal\source\repos\Contact Tracing App\Contact Tracing App\bin\Debug\AForge.dll
+C:\Users\universal\source\repos\Contact Tracing App\Contact Tracing App\bin\Debug\AForge.Video.DirectShow.dll
+C:\Users\universal\source\repos\Contact Tracing App\Contact Tracing App\bin\Debug\AForge.Video.dll
+C:\Users\universal\source\repos\Contact Tracing App\Contact Tracing App\bin\Debug\zxing.dll
+C:\Users\universal\source\repos\Contact Tracing App\Contact Tracing App\bin\Debug\zxing.presentation.dll
+C:\Users\universal\source\repos\Contact Tracing App\Contact Tracing App\bin\Debug\AForge.xml
+C:\Users\universal\source\repos\Contact Tracing App\Contact Tracing App\bin\Debug\AForge.Video.xml
+C:\Users\universal\source\repos\Contact Tracing App\Contact Tracing App\bin\Debug\AForge.Video.DirectShow.xml
+C:\Users\universal\source\repos\Contact Tracing App\Contact Tracing App\bin\Debug\zxing.xml
+C:\Users\universal\source\repos\Contact Tracing App\Contact Tracing App\bin\Debug\zxing.presentation.xml
